@@ -47,7 +47,6 @@ body {
 }
 
 
-
 .block1 {
   background-color: red;
   width: 20%;
@@ -103,5 +102,11 @@ header {
 @media (max-width: 960px) {
   .nav {
     display: none;
+  }
+}
+.kvadrat {
+  p {
+    color: red;
+    @include clamp(50, 200, 360, 1700);
   }
 }

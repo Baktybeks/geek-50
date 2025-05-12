@@ -104,3 +104,7 @@ header {
     display: none;
   }
 }
+.kvadrat p {
+  color: red;
+  font-size: clamp(50px, 50px + 150 * (100vw - 360px) / 1340, 200px);
+}
