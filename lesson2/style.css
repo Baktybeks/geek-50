@@ -1,0 +1,81 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-blue: #00f;
+  --primary-color: yellow;
+  --secondary-color: green;
+  --border: 1px solid var(--color-black);
+  --input-height: 42px;
+  --container-width: 500px;
+  --container-padding-width: 20px;
+  --border-radius: 10px;
+}
+
+.h1 {
+  color: var(--primary-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  background-color: blue;
+}
+
+.color {
+  color: blue;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  max-width: calc(var(--container-width) + var(--container-padding-width) * 2);
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+}
+.btn:hover {
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: red;
+  }
+}
+.banner {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 700;
+  font-family: "Heebo", sans-serif;
+}
+
+.banner-info {
+  display: flex;
+  align-items: end;
+  font-size: clamp(10px, 1.56vw, 30px);
+  line-height: 127%;
+}
+
+.banner-info::before {
+  content: "";
+  width: clamp(60px, 10.1vw, 194px);
+  aspect-ratio: 1;
+  margin-right: 30px;
+  background: url("./img/arrow.svg") center/contain no-repeat;
+}
+
+.title {
+  font-size: clamp(60px, 60px + 300 * (100vw - 360px) / 1560, 360px);
+  line-height: 1;
+}
